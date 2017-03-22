@@ -28,7 +28,7 @@ public class BouncingCircle extends BouncingFigure {
 	@Override
 	public boolean rightBorderCollision(int screenLimit) {
 		// TODO Auto-generated method stub
-		if(getXLeft()+this.diameter >= screenLimit)
+		if(getXLeft()+this.diameter > screenLimit)
 			return true;
 		return false;
 	}
@@ -36,7 +36,7 @@ public class BouncingCircle extends BouncingFigure {
 	@Override
 	public boolean leftBorderCollision() {
 		// TODO Auto-generated method stub
-		if(getXLeft() <= 0)
+		if(getXLeft() < 0)
 			return true;
 		return false;
 			}
@@ -44,7 +44,7 @@ public class BouncingCircle extends BouncingFigure {
 	@Override
 	public boolean upperBorderCollision() {
 		// TODO Auto-generated method stub
-		if(getYTop() <=0)
+		if(getYTop() <0)
 			return true;
 		return false;
 	}
@@ -52,7 +52,7 @@ public class BouncingCircle extends BouncingFigure {
 	@Override
 	public boolean lowerBorderCollision(int screenLimit) {
 		// TODO Auto-generated method stub
-		if(getYTop()+this.diameter >= screenLimit)
+		if(getYTop()+this.diameter > screenLimit)
 			return true;
 		return false;
 	}
